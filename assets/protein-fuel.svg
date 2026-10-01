@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b8ff00"/><stop offset="1" stop-color="#65b800"/></linearGradient></defs>
+<circle cx="250" cy="250" r="220" fill="none" stroke="url(#g)" stroke-width="3" opacity=".35"/>
+<circle cx="250" cy="250" r="170" fill="none" stroke="#fff" stroke-width="1" opacity=".15"/>
+<path d="M175 130h150l-16 255H191z" fill="url(#g)" opacity=".92"/>
+<path d="M165 130h170" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+<path d="M198 195h104M198 225h104" stroke="#111" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+<text x="250" y="292" text-anchor="middle" font-family="Arial,sans-serif" font-size="42" font-weight="900" fill="#111">PRO</text>
+<text x="250" y="327" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="4" fill="#111">FUEL</text>
+</svg>
