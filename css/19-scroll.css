@@ -1,0 +1,152 @@
+section[id] {
+    scroll-margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+    header {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    header .nav-inner {
+        width: 100%;
+        min-height: 64px;
+        padding: 10px 4%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        order: 2;
+        flex: 0 0 auto;
+    }
+
+    header .logo-image {
+        width: 112px;
+        max-width: 34vw;
+    }
+
+    header .logo {
+        min-width: 0;
+        flex-shrink: 0;
+        order: 1;
+    }
+
+    .nav-actions {
+        order: 3;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        flex-shrink: 0;
+    }
+
+    .nav-cta {
+        display: none;
+    }
+
+    .theme-switch {
+        transform: scale(.88);
+        transform-origin: center;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        display: flex !important;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3px;
+        padding: 0 4%;
+        margin: 0;
+        background: var(--surface);
+        border-top: 0;
+        border-bottom: 1px solid var(--line);
+        box-shadow: 0 12px 28px rgba(0,0,0,.16);
+        opacity: 0;
+        pointer-events: none;
+        transition: max-height .3s ease, padding .3s ease, opacity .2s ease;
+    }
+
+    .nav-links.mobile-open {
+        max-height: 420px;
+        padding: 8px 4% 12px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-links a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 44px;
+        padding: 10px 13px;
+        border-radius: 7px;
+        font-size: .86rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+        background: rgba(200,255,0,.12);
+    }
+
+    main {
+        padding-top: 64px;
+    }
+
+    .hero {
+        min-height: calc(100vh - 64px);
+    }
+
+    section[id] {
+        scroll-margin-top: 76px;
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-switch {
+        width: 68px;
+        height: 34px;
+    }
+
+    .theme-switch::before {
+        width: 26px;
+        height: 26px;
+    }
+
+    #theme-toggle:checked ~ .site .theme-switch::before {
+        transform: translateX(34px);
+    }
+
+    header .nav-inner {
+        min-height: 58px;
+        padding: 6px 3%;
+    }
+
+    header .logo-image {
+        width: 88px;
+        max-width: 30vw;
+    }
+
+    .mobile-menu-btn {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+
+/* Header action spacing for the search/cart tools */
+@media (max-width: 768px) {
+    header .nav-actions {
+        gap: 6px;
+    }
+}

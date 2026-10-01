@@ -1,0 +1,37 @@
+/* ---------- About ---------- */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-image {
+    min-height: 510px;
+    border-radius: 12px;
+    background:
+        linear-gradient(0deg, rgba(0,0,0,.2), transparent),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=85")
+        center/cover;
+    box-shadow: var(--shadow);
+}
+
+.about-copy p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.check-list {
+    display: grid;
+    gap: 13px;
+    margin: 25px 0;
+}
+
+.check-list li::before {
+    content: "✓";
+    color: var(--accent);
+    font-weight: 900;
+    margin-right: 10px;
+}
+

@@ -1,0 +1,19 @@
+/* ---------- Uploaded FitLife Logo ---------- */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 85px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .logo-image {
+        width: 68px;
+    }
+}
+

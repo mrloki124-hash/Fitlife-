@@ -1,0 +1,26 @@
+/* ---------- CTA ---------- */
+
+.cta {
+    width: min(1180px, 92%);
+    margin: 0 auto 100px;
+    border-radius: 14px;
+    padding: 70px 50px;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0,.35)),
+        url("https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+}
+
+.cta h2 {
+    max-width: 700px;
+    font-size: clamp(2.3rem, 5vw, 4.5rem);
+    line-height: .98;
+    letter-spacing: -2px;
+}
+
+.cta p {
+    color: #ddd;
+    max-width: 580px;
+    margin: 15px 0 25px;
+}
+

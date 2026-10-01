@@ -1,0 +1,47 @@
+/* ---------- Classes ---------- */
+
+.class-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 20px;
+}
+
+.class-large,
+.class-small {
+    min-height: 270px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.class-large {
+    min-height: 560px;
+    background-image: url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1200&q=85");
+}
+
+.class-small:first-child {
+    background-image: url("https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1000&q=85");
+}
+
+.class-small:last-child {
+    background-image: url("https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1000&q=85");
+}
+
+.class-info {
+    position: absolute;
+    inset: auto 0 0;
+    padding: 25px;
+    background: linear-gradient(transparent, rgba(0,0,0,.85));
+}
+
+.class-info h3 {
+    font-size: 1.5rem;
+}
+
+.class-info p {
+    color: #ddd;
+    font-size: .86rem;
+}
+

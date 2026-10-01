@@ -1,0 +1,72 @@
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .cards,
+    .pricing,
+    .testimonials {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-grid,
+    .class-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facilities {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .class-large {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-cta {
+        display: none;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .cards,
+    .pricing,
+    .testimonials,
+    .facilities,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card.featured {
+        transform: none;
+    }
+
+    .about-image {
+        min-height: 360px;
+    }
+
+    .cta {
+        padding: 50px 25px;
+        margin-bottom: 70px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+    }
+}
+

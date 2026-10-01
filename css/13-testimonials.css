@@ -1,0 +1,26 @@
+/* ---------- Testimonials ---------- */
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.quote {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 28px;
+    border-radius: 10px;
+}
+
+.stars {
+    color: var(--accent);
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.quote p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+

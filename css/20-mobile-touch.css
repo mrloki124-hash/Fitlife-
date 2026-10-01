@@ -1,0 +1,25 @@
+/* ---------- Mobile clarity / touch improvements ---------- */
+@media (max-width: 768px) {
+    .section-heading h2 { font-size: clamp(1.9rem, 8vw, 2.8rem); }
+    .section-heading p { font-size: .92rem; }
+    .service-card { flex-basis: 285px; }
+    .class-large { min-height: 330px !important; }
+    .class-small { min-height: 230px !important; }
+    .trainer-photo { height: 250px !important; }
+    .price-card { padding: 24px !important; }
+    .contact-info, .contact-form { padding: 22px !important; }
+    .btn { min-height: 46px; }
+}
+
+.nav-links a:focus-visible,
+.btn:focus-visible,
+.theme-switch:focus-visible{
+    outline:3px solid var(--accent);
+    outline-offset:3px;
+}
+@media(max-width:768px){
+    header.navbar{position:fixed !important;}
+    header .nav-inner{background:var(--surface);}
+    main{padding-top:64px;}
+    .hero{min-height:calc(100vh - 64px);}
+}

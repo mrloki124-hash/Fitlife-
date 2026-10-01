@@ -1,0 +1,159 @@
+/* ---------- Facilities ---------- */
+
+.facilities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.facility {
+    min-height: 150px;
+    padding: 22px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+}
+
+.facility b {
+    display: block;
+    margin-top: 10px;
+}
+
+.facility small {
+    color: var(--muted);
+}
+
+
+/* ---------- Our Facilities Automatic Background Slider ---------- */
+
+#facilities,
+.facilities-slider {
+    overflow: hidden;
+}
+
+.facilities-slider {
+    width: 100%;
+    padding: 8px 0 20px;
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.facilities-track {
+    display: flex;
+    width: max-content;
+    gap: 18px;
+    animation: facilitiesAutoSlide 32s linear infinite;
+}
+
+.facilities-slider:hover .facilities-track {
+    animation-play-state: paused;
+}
+
+.facility-slide {
+    position: relative;
+    flex: 0 0 285px;
+    height: 210px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.16);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: var(--shadow);
+    isolation: isolate;
+}
+
+.facility-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.05) 0%,
+            rgba(0,0,0,.20) 35%,
+            rgba(0,0,0,.90) 100%
+        );
+}
+
+.facility-slide:hover {
+    border-color: var(--accent);
+}
+
+.facility-content {
+    width: 100%;
+    padding: 22px;
+    color: #fff;
+}
+
+.facility-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 9px;
+    border-radius: 9px;
+    background: rgba(200,255,0,.18);
+    backdrop-filter: blur(5px);
+    font-size: 1.2rem;
+}
+
+.facility-content b {
+    display: block;
+    font-size: 1.05rem;
+    margin-bottom: 3px;
+}
+
+.facility-content small {
+    color: rgba(255,255,255,.82);
+    font-size: .78rem;
+}
+
+.facility-bg-1 {
+    background-image: url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=85");
+}
+.facility-bg-2 {
+    background-image: url("https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=900&q=85");
+}
+.facility-bg-3 {
+    background-image: url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=85");
+}
+.facility-bg-4 {
+    background-image: url("https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85");
+}
+.facility-bg-5 {
+    background-image: url("https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=900&q=85");
+}
+.facility-bg-6 {
+    background-image: url("https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=900&q=85");
+}
+.facility-bg-7 {
+    background-image: url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=900&q=85");
+}
+.facility-bg-8 {
+    background-image: url("https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=900&q=85");
+}
+
+@keyframes facilitiesAutoSlide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-50% - 9px));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .facilities-track {
+        animation: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .facility-slide {
+        flex-basis: 255px;
+        height: 195px;
+    }
+}
+

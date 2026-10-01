@@ -1,0 +1,80 @@
+/* ---------- Contact ---------- */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 25px;
+}
+
+.contact-info,
+.contact-form {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.contact-info p {
+    color: var(--muted);
+    margin: 12px 0 25px;
+}
+
+.contact-item {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.contact-item small {
+    display: block;
+    color: var(--muted);
+}
+
+.contact-link {
+    display: inline-block;
+    color: var(--text);
+    text-decoration: none;
+    transition: color .2s ease, transform .2s ease;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.contact-link:focus-visible,
+.socials a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    border: 1px solid var(--line);
+    background: var(--surface-2);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 14px;
+    outline: none;
+    font: inherit;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+    margin-top: 15px;
+}
+
+.form-full {
+    grid-column: 1 / -1;
+}
+
